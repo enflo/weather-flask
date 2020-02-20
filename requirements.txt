@@ -1,0 +1,7 @@
+Flask==1.1.1
+Flask-PyMongo==2.3.0
+flask-swagger-ui==3.20.9
+Jinja2==2.11.1
+pymongo==3.10.1
+sentry-sdk==0.14.1
+blinker==1.4

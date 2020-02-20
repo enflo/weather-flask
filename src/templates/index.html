@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>A Weather RPI API</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet"  media="screen,projection" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Raspberry Pi Weather Station</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="http://localhost:8080/api/">API</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="weather-wrapper">
+        <div class="weather-card">
+          <div class="weather-card-content">
+            <section class="weather-card-temp">{{ temperature }}º</section>
+            <img class="weather-card-img" src="https://img.icons8.com/officel/96/000000/cathedral.png">
+          </div>
+          <div class="weather-card-title">
+            <p>Palma</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container">
+        © 2020 Copyright
+        <a class="grey-text text-lighten-4 right">Made with <i class="tiny material-icons">favorite</i> in Mallorca</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

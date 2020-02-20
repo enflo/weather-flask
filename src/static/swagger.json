@@ -1,0 +1,11 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "Wheater RPI API",
+    "version": "0.0.1",
+    "title": "Weather RPI API",
+    "contact": {
+      "email": "toniflorithomar@gmail.com"
+    }
+  }
+}

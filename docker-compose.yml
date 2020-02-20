@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  web:
+    container_name: weather_web
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+     - "8080:5000"
+    volumes:
+      - .:/opt
+    entrypoint: python /opt/src/weather.py
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"

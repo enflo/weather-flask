@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+body {
+    background-color: lighten(#C8DAE6, 10%);
+}
+
+.weather-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.weather-card {
+    margin:  20px 5px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+    height: 270px;
+    background-color: white;
+    box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+}
+
+.weather-card-content{
+    position: relative;
+    bottom: 0;
+    padding: 2em 1em 1em 1em;
+}
+
+.weather-card-title {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+}
+
+.weather-card-temp{
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
+    color:#B8B8B8;
+    font-size:80px;
+    width: 50%;
+}
+
+.weather-card-img{
+    position: relative;
+    padding-top: 0.8em;
+    left: 9em;
+}
+
+
+.weather-card .weather-card-title p{
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
+    color:#B8B8B8;
+    width: 100%;
+    font-size:28px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: block;
+}
+
+.page-footer{
+    padding-top: 0px;
+}
