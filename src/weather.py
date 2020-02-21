@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, jsonify, request
 from middlewares import configureSwagger, sentry
 from routes.api import api
@@ -26,4 +27,4 @@ def unexpected_server_error(e):
     return render_template('500_response.html')
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0",debug=True)
+    app.run(host="0.0.0.0",debug=True,port=int(os.environ.get('PORT', 8080)))

@@ -1,5 +1,11 @@
 venv
 .vscode
-__pycache__
+
 LICENSE
+
+Dockerfile
 README.md
+*.pyc
+*.pyo
+*.pyd
+__pycache__
