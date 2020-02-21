@@ -10,7 +10,7 @@ services:
      - "8080:8080"
     volumes:
       - .:/opt
-    entrypoint: python /opt/src/weather.py
+#    entrypoint: python /opt/src/weather.py
     links:
       - mongo
     depends_on:
