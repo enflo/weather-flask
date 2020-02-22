@@ -1,6 +1,6 @@
 import os
 
-mongurl = os.environ.get('mongodb://51.158.125.197:27017/', 'mongodb://mongo:27017/')
+mongurl = os.environ.get(mongodbURL, 'mongodb://mongo:27017/')
 
 setMongo = {
     "url": mongurl,
