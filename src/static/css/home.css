@@ -38,9 +38,10 @@ body {
 .weather-card-temp{
     position: absolute;
     font-family: 'Lato', sans-serif;
-    font-weight:300;
     color:#B8B8B8;
-    font-size:80px;
+    font-size:50px;
+    padding-top: inherit;
+    font-weight: bold;
     width: 50%;
 }
 
