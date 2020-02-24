@@ -11,7 +11,10 @@ def userinsertdata():
     """
     data = json.loads(request.data)
 
-    mongoData = {   "city":[data["city"], data["altitude"], data["latitude"]],
+    mongoData = {   "username": data["username"],
+                    "city":[data["city"], data["latitude"], data["longitude"], data["sealevel"]],
+                    "datetime": data["datetime"],
+                    "devices": data["devices"],
                     "temperature":data["temperature"],
                     "humidity":data["humidity"],
                     "pressure":data["pressure"]
