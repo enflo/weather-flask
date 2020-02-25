@@ -1,13 +1,13 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/toni-204018/weather', '-f', 'dockerfile','.']
+  args: ['build', '-t', 'gcr.io/canflo/weather', '-f', 'dockerfile','.']
   timeout: 500s
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/toni-204018/weather']
+  args: ['push', 'gcr.io/canflo/weather']
 
 - name: "gcr.io/cloud-builders/gcloud"
-  args: ['beta', 'run', 'deploy', 'weather', '--image', 'gcr.io/toni-204018/weather', '--region', 'europe-west1', '--allow-unauthenticated', '--platform', 'managed']
+  args: ['beta', 'run', 'deploy', 'weather', '--image', 'gcr.io/canflo/weather', '--region', 'europe-west1', '--allow-unauthenticated', '--platform', 'managed']
 
 images:
   - gcr.io/toni-204018/weather
