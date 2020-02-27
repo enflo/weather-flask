@@ -1,7 +1,9 @@
 import os
 
+eget = os.environ.get
+
 setMongo = {
-    "url": 'mongodb://51.158.125.197:27017/',
+    "url": eget('MONGO_PATH','mongodb://localhost:27017/'),
     "dbname":"weather",
     "dbcolweather":"weather",
     "dbcolusers":"users"

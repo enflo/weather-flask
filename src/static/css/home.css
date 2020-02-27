@@ -17,14 +17,15 @@ body {
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-    width: 270px;
-    height: 270px;
+    width: 25em;
+    height: 20em;
     background-color: white;
     box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
 }
 
 .weather-card-content{
     position: relative;
+    height: 69%;
     bottom: 0;
     padding: 2em 1em 1em 1em;
 }
@@ -39,16 +40,17 @@ body {
     position: absolute;
     font-family: 'Lato', sans-serif;
     color:#B8B8B8;
-    font-size:50px;
+    font-size:30px;
     padding-top: inherit;
     font-weight: bold;
     width: 50%;
+    height: auto;
 }
 
 .weather-card-img{
     position: relative;
-    padding-top: 0.8em;
-    left: 9em;
+    padding-top: 3em;
+    left: 14em;
 }
 
 

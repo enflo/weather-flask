@@ -26,11 +26,15 @@
       <div class="weather-wrapper">
         <div class="weather-card">
           <div class="weather-card-content">
-            <section class="weather-card-temp">{{ temperature }}º</section>
+            <section class="weather-card-temp">
+              temp: {{ temperature }}º
+              hum: {{ humidity }}%
+              pres: {{ pressure }}
+            </section>
             <img class="weather-card-img" src="https://img.icons8.com/officel/96/000000/cathedral.png">
           </div>
           <div class="weather-card-title">
-            <p>Palma</p>
+            <p>{{ city }}</p>
           </div>
         </div>
       </div>
